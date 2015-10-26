@@ -1,5 +1,19 @@
 # Javascript编码规范
 
+[1 命名](#user-content-1-命名)
+
+[2 标签](#user-content-2-标签)
+
+[3 属性](#user-content-3-属性)
+
+[4 变量](#user-content-4-变量)
+
+[5 命名](#user-content-5-方法)
+
+[6 对象](#user-content-6-对象)
+
+[7 属性](#user-content-7-属性)
+
 
 
 ## 1 命名
@@ -10,7 +24,7 @@
 
 #### **方法命名：** 小驼峰式命名（构造函数为大驼峰式命名、私有方法以 `_` 开头的小驼峰式）。
 
-####  **常量命名：** 全大小 ，单词之前用 `_` 分隔开。
+#### **常量命名：** 全大小 ，单词之前用 `_` 分隔开。
 
 #### **变量命名：** 小驼峰式命名。
 
@@ -24,7 +38,7 @@
 <!-- good --> 
 <div id="ocean-erp"></div>
 <div class="ocean-erp"></div>
- 
+
 <!-- bad -->
 <div id="oceanerp"></div>
 <div class="oceanerp"></div>
@@ -67,8 +81,6 @@ var init = function(){ //私有方法命名
   //...
 }
 ```
-
-
 
 #### [建议] `id` 、 `class` 命名，在描述清楚的前提下尽可能的短。
 
@@ -470,4 +482,3 @@ function calculate(id){
 
 
 ```
-
