@@ -1,74 +1,8 @@
 # HTML编码规范
 
-[1 代码风格](#user-content-1-代码风格)
+### 1 标签
 
-​	[1.1 命名](user-content-11-命名)
-
-​	[1.2 标签](user-content-12标签)
-
-
-
-
-
-## 1 代码风格
-
-### 1.1 命名
-
-#### **id命名：** `id`  全小写，单词之前用 `-` 分隔开。
-
-#### **class命名：** `class` 全小写，单词之前用  `-` 分隔开。
-
-#### **常量命名：** 全大小 ，单词之前用 `_` 分隔开。
-
-#### **变量命名：** 小驼峰式命名。
-
-#### 注：jquery对象赋值给变量时，变量前面加 `$` ，html模板赋值给变量时，变量前面加 `tpl`	 。
-
-示例：
-
-``` html
-<!-- good --> 
-<div id="ocean-erp"></div>
-<div class="ocean-erp"></div>
- 
-<!-- bad -->
-<div id="oceanerp"></div>
-<div class="oceanerp"></div>
-```
-
-
-
-``` javascript
-//good
-var oceanErpCount = 20, //变量
-   	OCEAN_ERP_COUNT = 20, //常量
-	$body = $(document.body), //jquery对象
-    tplBody = document.body.innerHTML; //html模板
-
-//bad
-var ocean_erp_count = 20, //变量
-	OCEANERPCOUNT = 20, //常量
-    body = $(document.body), //jquery对象
-    bodyHtml = document.body.innerHTML; //html模板
-```
-
-
-
-#### [建议] `id` 、 `class` 命名，在描述清楚的前提下尽可能的短。
-
-``` html
-<!-- good -->
-<div id="nav"></div>
-
-<!-- bad -->
-<div id="navigation"></div>
-```
-
-
-
-### 1.2 标签
-
-#### 标签名使用小写字母。
+#### [强制] 标签名使用小写字母。
 
 示例：
 
@@ -82,7 +16,7 @@ var ocean_erp_count = 20, //变量
 
 
 
-#### 对于无需自闭合的标签，需要自闭合
+#### [建议] 对于无需自闭合的标签，需要自闭合
 
 解释：
 
@@ -106,7 +40,31 @@ var ocean_erp_count = 20, //变量
 
 
 
-### 1.3 属性
+#### [强制] `HTML` 标签的使用应该遵循标签的语义。
+
+解释：
+
+下面是常见标签语义
+
+- p - 段落
+- h1,h2,h3,h4,h5,h6 - 层级标题
+- strong,em - 强调
+- ins - 插入
+- del - 删除
+- abbr - 缩写
+- code - 代码标识
+- cite - 引述来源作品的标题
+- q - 引用
+- blockquote - 一段或长篇引用
+- ul - 无序列表
+- ol - 有序列表
+- dl,dt,dd - 定义列表
+
+
+
+
+
+### 2 属性
 
 #### [强制] 属性名称必须使用小写字母。
 
@@ -120,21 +78,35 @@ var ocean_erp_count = 20, //变量
 <table cellSpacing="0"></table>
 ```
 
-
-
 #### [建议] 自定义属性建议以 `XXX-` 为前缀，推荐使用 `data-` 。
 
 解释：data-*的形式，所有主流浏览器都支持，而且可以通过jquery的data方法去获取。
 
+示例：
+
+``` html
+<div data-id="1"></div>
+```
+
+#### [建议] 非必须属性值，建议不添加属性值。
+
+示例：
+
+``` html
+<!-- good -->
+<input type="text" readonly />
+<input type="text" disabled />
+
+<!-- bad -->
+<input type="text" readonly="readonly" />
+<input type="text" disabled="disabled" />
+```
 
 
 
+### 3 通用
 
-## 2 通用
-
-### 2.1 DOCTYPE
-
-#### 使用 `HTML5` 的 `doctype` 来启用标准模式，建议使用大写的 `DOCTYPE` 。
+#### [建议] DOCTYPE，使用 `HTML5` 的 `doctype` 来启用标准模式，建议使用大写的 `DOCTYPE` 。
 
 示例：
 
@@ -152,7 +124,7 @@ var ocean_erp_count = 20, //变量
 
 
 
-### 2.2  CSS和Javascript引入
+### 4  CSS和Javascript引入
 
 #### [建议] 展示定义放置于 `CSS` 中，行为定义放置于外部 `Javascript` 中。
 
@@ -174,11 +146,9 @@ var ocean_erp_count = 20, //变量
 
 
 
-## 3 表单
+### 5 表单
 
-### 3.1 控件标题 
-
-#### [强制] 有文件标题的控件，必须使用 `label` 标签将其与标题相关联。
+#### [强制] 有文字标题的控件，必须使用 `label` 标签将其与标题相关联。
 
 解释：
 
@@ -198,9 +168,7 @@ var ocean_erp_count = 20, //变量
 
 
 
-
-
-## 4 模板中的html
+### 6 模板
 
 #### [建议] 模板代码的缩进优先保证 `HTML` 代码的缩进规则。
 
@@ -229,6 +197,4 @@ var ocean_erp_count = 20, //变量
     </div>
 {/if}
 ```
-
-
 
