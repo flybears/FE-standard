@@ -198,3 +198,40 @@
 {/if}
 ```
 
+
+
+### 7 注释
+
+代码块之间是注释标明和分隔开。
+
+``` html
+<!-- header start -->
+<header>
+	这是头部
+  	....
+</header>
+<!-- header end -->
+
+<!-- 内容区域 start -->
+<section>
+	内容区域
+  	....
+</section>
+<!-- 内容区域 end -->
+
+<!-- 页脚 start-->
+<footer>
+	页脚区域
+  	....
+</footer>
+<!-- 页脚 end -->
+
+<!-- 弹出框模板 start -->
+<script id="tplDialog" type="text/html">
+	<div>
+    	...
+    </div>
+</script>
+<!-- 弹出框模板 end -->
+```
+

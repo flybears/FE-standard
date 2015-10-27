@@ -5,5 +5,6 @@
 * [Javascript编码规范](js-standard.md)	
 * [HTML编码规范](html-standard.md)
 * [CSS编码规范](css-standard.md)
+* [目录结构介绍](project-contents.md)
 * [目录结构介绍](directory-structure.md)
 * [其他](other.md)
