@@ -29,7 +29,7 @@
 <input type="text" name="title" />
 
 <!-- bad -->
-<input type="text" name="title" />
+<input type="text" name="title">
 ```
 
 
@@ -234,4 +234,3 @@
 </script>
 <!-- 弹出框模板 end -->
 ```
-

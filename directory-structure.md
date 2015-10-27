@@ -29,7 +29,7 @@
             			|--js		js文件夹
                         |-- tpl		模板文件
                         |-- css		css文件
-                                
+
                 |-- bz2
                         |--js
                         |-- tpl
@@ -45,8 +45,11 @@
 		|-- assets		项目发布目录
         		|-- css	
                 |-- js
+                |-- fonts
+                |-- images
                 |-- src
         |-- i18n		国际化
+        |-- fonts		图标字体
         |-- widget		自定义组件库
         |-- mock-data	模拟数据
         |-- images		图片文件夹
@@ -61,4 +64,3 @@
                         |--tpl			模板文件
                         |--css			css文件
 ```
-
