@@ -24,10 +24,10 @@
         |-- images		图片库
         |-- css		less文件
         |-- src			业务源码
-        		|-- bz1			业务名称
-            			|--js		js文件夹
-                        |-- tpl		模板文件
-                        |-- css		css文件
+		|-- bz1			业务名称
+			|--js		js文件夹
+			|-- tpl		模板文件
+			|-- css		css文件
 
                 |-- bz2
                         |--js
