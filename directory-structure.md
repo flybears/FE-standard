@@ -14,11 +14,10 @@
         |-- i18n		国际化
 |-- project		前端项目名称		
         |-- assets		框架压缩文件夹
-        |-- i18n		国际化
-        |-- widget		与项目相关的自定义组件
+        |-- api		        接口文件
+        |-- components		与项目相关的自定义组件
         |-- mock-data   模拟json数据文件夹
         |-- commons		公共文件夹
-        		|-- assets		和项目有关的widget、css压缩在此文件夹
                 |-- utils		工具类
                 |-- vendor		第三方插件库
                 |-- lib			基础库
